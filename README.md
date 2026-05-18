@@ -66,7 +66,7 @@ Browser sends GET / HTTP/1.1 to server
 Server responds HTTP/1.1 200 OK with the page
 
 HTTP vs HTTPS:
-- HTTP port 80 — unencrypted — anyone can read it
+- HTTP port 80 — unencrypted — anyone can read it(unsafe)
 - HTTPS port 443 — encrypted with TLS — safe
 
 HTTP Attacks:
