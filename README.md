@@ -244,5 +244,5 @@ Key takeaways:
 
 ## 👤 Author
 Fredrick Agufenwa
+
 Cybersecurity Student | SOC & Threat Detection
-#50DaysOfCybersecurity
