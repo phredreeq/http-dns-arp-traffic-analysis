@@ -1,11 +1,11 @@
-# 🌐 HTTP, DNS and ARP Traffic Analysis
+# HTTP, DNS and ARP Traffic Analysis
 ## Analyzing Core Network Protocols Using Wireshark
 
 ---
 
-## 📌 Overview
+## Overview
 HTTP, DNS and ARP are three of the most fundamental
-network protocols — and three of the most abused by
+network protocols, and three of the most abused by
 attackers. This project captures and analyzes real
 traffic for all three protocols using Wireshark on
 Kali Linux, demonstrating normal behaviour and
@@ -13,7 +13,7 @@ explaining how each protocol is exploited.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Capture real HTTP, DNS and ARP traffic live
 - Analyze request and response patterns for each
 - Understand why HTTP is dangerous vs HTTPS
@@ -22,7 +22,7 @@ explaining how each protocol is exploited.
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 | Tool | Purpose |
 |---|---|
 | **Wireshark** | Live packet capture and analysis |
@@ -33,7 +33,7 @@ explaining how each protocol is exploited.
 
 ---
 
-## 🧠 Protocol Background
+## Protocol Background
 
 ### DNS — Domain Name System
 Translates human readable domain names into IP
@@ -48,12 +48,12 @@ Your computer connects to that IP
 Key details:
 - Port 53
 - Uses UDP for speed
-- Never blocked by firewalls — attackers exploit this
+- Never blocked by firewalls 
 
 DNS Attacks:
-- DNS Poisoning — fake responses redirect victims
-- DNS Tunneling — data hidden inside DNS queries
-- DGA — malware generates random domains
+- DNS Poisoning: fake responses redirect victims
+- DNS Tunneling: data hidden inside DNS queries
+- DGA: malware generates random domains
 
 ---
 
@@ -70,15 +70,15 @@ HTTP vs HTTPS:
 - HTTPS port 443 — encrypted with TLS — safe
 
 HTTP Attacks:
-- Credential theft — passwords visible in cleartext
-- Man in the Middle — attacker reads and modifies traffic
-- Command and Control — malware communicates via HTTP
+- Credential theft: passwords visible in cleartext
+- Man in the Middle: attacker reads and modifies traffic
+- Command and Control: malware communicates via HTTP
 
 ---
 
 ### ARP — Address Resolution Protocol
 Translates IP addresses to MAC addresses on a
-local network. Operates at Layer 2 — below IP.
+local network. Operates at Layer 2, below IP.
 
 How it works:
 Kali broadcasts — Who has 192.168.10.1?
@@ -92,7 +92,7 @@ instead — Man in the Middle attack established.
 
 ---
 
-## 🔬 Methodology
+## Methodology
 
 ### Commands Used to Generate Traffic
 
@@ -121,7 +121,7 @@ http or dns or arp
 
 ---
 
-## 📸 Results
+## Results
 
 ### HTTP Traffic — GET Request and Response
 
@@ -153,7 +153,7 @@ http or dns or arp
 
 ---
 
-## 🧠 Analysis
+## Analysis
 
 ### Finding 1 — HTTP Cleartext Confirmed
 HTTP traffic between Kali and example.com showed
@@ -195,7 +195,7 @@ Response confirmed gateway hostname as pfSense.home.arpa
 
 ---
 
-## 🔐 Security Relevance
+## Security Relevance
 
 ### Why These Protocols Matter to SOC Analysts
 
@@ -218,18 +218,18 @@ ARP monitoring reveals:
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 Successfully captured and analyzed HTTP, DNS and
 ARP traffic using Wireshark on Kali Linux.
 Understanding normal protocol behaviour is
-essential for detecting anomalies — you cannot
+essential for detecting anomalies. You cannot
 spot suspicious traffic without knowing what
 normal looks like.
 
 Key takeaways:
-- HTTP is dangerous — always use HTTPS
+- HTTP is dangerous, always use HTTPS
 - DNS reveals everything devices are doing
-- ARP has no authentication — easy to poison
+- ARP has no authentication, which makes it easy to poison
 - All three protocols are regularly abused by attackers
 
 ---
